@@ -1,0 +1,24 @@
+.dashboard {
+  height: 100%;
+  width: 100%;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.dashboard-main {
+  flex-grow: 1;
+  height: 100%;
+  /* width: calc(100% - var(--sb-w)); */
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: calc(100% - var(--nav-h));
+  width: 100%;
+  padding: 1rem 1rem;
+  overflow-y: scroll;
+  /* background-color: var(--gray); */
+}

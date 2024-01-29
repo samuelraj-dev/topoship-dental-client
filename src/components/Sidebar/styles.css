@@ -1,0 +1,151 @@
+.sidebar{
+  height: 100%;
+  width: var(--sb-w);
+  /* border-right: 1px solid var(--gray); */
+  transition: 0.2s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sb-header{
+  position: relative;
+  height: var(--nav-h);
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sb-header h1 {
+  margin-left: 1rem;
+}
+
+.sb-header img{
+  margin-left: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.sb-header .sb-controller{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  font-size: 15px;
+  width: 2rem;
+  height: 2rem;
+  /* transform: translateX(1rem); */
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sb-main{
+  height: calc(100% - (var(--nav-h) + var(--foo-h) ));
+  width: -webkit-fill-available;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sb-nav {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sb-link {
+  color: #2C2F32;
+  padding: .4rem .4rem;
+  margin-bottom: .4rem;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.sb-link-active {
+  /* background: hsl(var(--primary));
+  color: #fff; */
+  /* background: #c8e861; */
+  /* color: #2C2F32; */
+  background: linear-gradient(135deg, rgba(91, 228, 155, 0.2), rgba(0, 167, 111, 0.2)) rgb(255, 255, 255);
+  color: #2C2F32;
+}
+
+.sb-link .sb-link-icon {
+  display: flex;
+  margin-right: 0.7rem;
+}
+
+.sb-link .sb-link-name {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.doctor-info {
+  width: -webkit-fill-available;
+  padding: 1rem 0.2rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}.doctor-profile {
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: url("@/assets/DrTamilarasi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}.doctor-name{
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}.doctor-designation{
+  font-size: 11px;
+}
+
+.sb-footer{
+  height: var(--foo-h);
+  width: -webkit-fill-available;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sb-logout {
+  font-size: 15px;
+  padding: 0.2rem 0.5rem;
+  /* background: var(--gray); */
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.sb-logout-icon{
+  margin-right: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

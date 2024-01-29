@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  client:
+    build: ./
+    container_name: topoship_dental_frontend_c
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./:/app
+    stdin_open: true
+    tty: true
